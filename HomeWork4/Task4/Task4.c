@@ -3,6 +3,7 @@
 #include <time.h>
 #include <locale.h>
 #include <math.h>
+#include <string.h>
 void draw_table(char** z, int** d, int s, int s1) {
 	int count;
 	printf("|");
@@ -33,8 +34,8 @@ void draw_table(char** z, int** d, int s, int s1) {
 	
 }
 int main() {
-	SetConsoleCP(1251); //установка кодовой страницы win-cp 1251 в поток ввода
-	SetConsoleOutputCP(1251); //установка кодовой страницы win-cp 1251 в поток
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	setlocale(LC_ALL, "rus");
 	int size1 = 5, size = 5;
 	char kostil[3];
