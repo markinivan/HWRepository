@@ -12,12 +12,15 @@ void merge(char* s1, char* s2, char* s3) {
 			s3[i] = s1[i];
 		}
 		else {
-			s3[i] = s2[i - len1];
+			s3[i+1] = s2[i - len1];
 		}
 	}
+	s3[len1] = ' ';
 }
 int main() {
 	setlocale(LC_ALL, "rus");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	char* str1;
 	char* str2;
 	char* str3;
